@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <title>Stranda idrettspark</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="body1">
+
+    <nav class="navbar" style="background-color: #fa6108; position: fixed; width: 100%;">
+        <div class=" container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#hjem">Stranda</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#hjem">Hjem</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Apparater<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#page1-1">Apparat 1</a></li>
+                        <li><a href="#page1-2">Apparat 2</a></li>
+                        <li><a href="#page1-3">Apparat 3</a></li>
+                        <li><a href="#page1-4">Apparat 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#page2">linker</a></li>
+                <li><a href="#page3">om oss</a></li>
+            </ul>
+        </div>
+    </nav>   
+
+    <section id="hjem">
+        <br>
+        <h3>hei, du vet hvorfor du er her. klikk på de neste knappene for å komme videre for vært apparat.</h3>
+        <p>Du kan enten bruke navigasjons baren eller skrolle nedover.</p>
+    </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <section id="page1-1">
+        <img src="%" id="bilde" width="20%">
+    <p id="tekst"></p>
+    <p><input type="radio" alt="Bilde av dytte apparat." name="bildeliste" id="rbtnBilde1" value="img1.jpg">bilde 1</p>
+    <p><input type="radio" alt="Bilde av dytte apparat." name="bildeliste" id="rbtnBilde2" value="img2.jpg">bilde 2</p>
+    <p><input type="radio" alt="Bilde av dytte apparat." name="bildeliste" id="rbtnBilde3" value="img3.jpg">bilde 3</p>
+    <p><input type="radio" alt="Bilde av dytte apparat." name="bildeliste" id="rbtnBilde4" value="img4.jpg">bilde 4</p>
+    </section>
+
+    <section id="page1-2">
+        <img src="%" id="bilde2" width="20%">
+    <p id="tekst2"></p>
+    <p><input type="radio" alt="Bilde av trekke apparat." name="bildeliste2" id="rbtnBilde5" value="img5.jpg">bilde 5</p>
+    <p><input type="radio" alt="Bilde av trekke apparat." name="bildeliste2" id="rbtnBilde6" value="img6.jpg">bilde 6</p>
+    <p><input type="radio" alt="Bilde av trekke apparat." name="bildeliste2" id="rbtnBilde7" value="img7.jpg">bilde 7</p>
+    </section>
+
+    <section id="page1-3">
+        <img src="%" id="bilde3" width="20%">
+        <p id="tekst3"></p>
+    <p><input type="radio" alt="Bilde av sparke apparat" name="bildeliste3" id="rbtnBilde8" value="img8.jpg">bilde 8</p>
+    <p><input type="radio" alt="Bilde av sparke apparat" name="bildeliste3" id="rbtnBilde9" value="img9.jpg">bilde 9</p>
+    <p><input type="radio" alt="Bilde av sparke apparat" name="bildeliste3" id="rbtnBilde10" value="img10.jpg">bilde 10</p>
+    <p><input type="radio" alt="Bilde av sparke apparat" name="bildeliste3" id="rbtnBilde11" value="img11.jpg">bilde 11</p>
+    <p><input type="radio" alt="Bilde av sparke apparat" name="bildeliste3" id="rbtnBilde12" value="img12.jpg">bilde 12</p>
+    </section>
+
+    <section id="page1-4">
+        <img src="%" id="bilde4" width="20%">
+        <p id="tekst4"></p>
+        <p><input type="radio" alt="Bilde av løpe apparat." name="bildeliste4" id="rbtnBilde13" value="img13.jpg">bilde 13</p>
+        <p><input type="radio" alt="Bilde av løpe apparat." name="bildeliste4" id="rbtnBilde14" value="img14.jpg">bilde 14</p>
+        <p><input type="radio" alt="Bilde av løpe apparat." name="bildeliste4" id="rbtnBilde15" value="img15.jpg">bilde 15</p>
+        <p><input type="radio" alt="Bilde av løpe apparat." name="bildeliste4" id="rbtnBilde16" value="img16.jpg">bilde 16</p>
+    </section>
+
+    <section id="page2">
+        <a href="https://viken.no/halden-vgs/">halden vgs</a>
+    </section>
+
+    <section id="page3">
+        <h3>Hvis du har kommet ned hit, så betyr det at du har lest ferdig.</h3>
+    </section>
+
+<script>
+
+window.onload = oppstart;
+
+function oppstart() {
+    document.getElementById("rbtnBilde1").onclick = visBilde1;
+    document.getElementById("rbtnBilde2").onclick = visBilde2;
+    document.getElementById("rbtnBilde3").onclick = visBilde3; 
+    document.getElementById("rbtnBilde4").onclick = visBilde4;
+    document.getElementById("rbtnBilde5").onclick = visBilde5;
+    document.getElementById("rbtnBilde6").onclick = visBilde6; 
+    document.getElementById("rbtnBilde7").onclick = visBilde7;
+    document.getElementById("rbtnBilde8").onclick = visBilde8;
+    document.getElementById("rbtnBilde9").onclick = visBilde9; 
+    document.getElementById("rbtnBilde10").onclick = visBilde10;
+    document.getElementById("rbtnBilde11").onclick = visBilde11;
+    document.getElementById("rbtnBilde12").onclick = visBilde12; 
+    document.getElementById("rbtnBilde13").onclick = visBilde13;
+    document.getElementById("rbtnBilde14").onclick = visBilde14;
+    document.getElementById("rbtnBilde15").onclick = visBilde15; 
+    document.getElementById("rbtnBilde16").onclick = visBilde16; 
+    alert("Hei og velkommen, du er her for å se på treningsapparater ved Stranda idrettpark. Så la oss komme i gang!")
+
+
+    document.getElementById("bilde").src = document.getElementById("rbtnBilde1").value;
+    document.getElementById("tekst").innerHTML = "Ved dette apparatet jobber du med å dytte fra deg."
+    
+    document.getElementById("rbtnBilde1").checked = true;
+
+    document.getElementById("bilde2").src = document.getElementById("rbtnBilde5").value;
+    document.getElementById("tekst2").innerHTML = "Ved dette apparatet jobber du med å dra til deg."
+
+    document.getElementById("rbtnBilde5").checked = true;
+
+    document.getElementById("bilde3").src = document.getElementById("rbtnBilde8").value;
+    document.getElementById("tekst3").innerHTML = "Ved dette apparatet jobber du med å sparke fra deg."
+
+    document.getElementById("rbtnBilde8").checked = true;
+
+    document.getElementById("bilde4").src = document.getElementById("rbtnBilde13").value;
+    document.getElementById("tekst4").innerHTML = "Dette apparatet er som en trenings sykkel, men du står isteden for å sitte."
+
+    document.getElementById("rbtnBilde13").checked = true;
+
+}
+
+function visBilde1() {
+    document.getElementById("bilde").src = document.getElementById("rbtnBilde1").value;
+    document.getElementById("tekst").innerHTML = "Ved dette apparatet jobber du med å dytte fra deg."
+}
+
+function visBilde2() {
+    document.getElementById("bilde").src = document.getElementById("rbtnBilde2").value;
+    document.getElementById("tekst").innerHTML = "Du setter deg i settet og tar hendene på håndtakkene."
+}
+
+function visBilde3() {
+    document.getElementById("bilde").src = document.getElementById("rbtnBilde3").value;
+    document.getElementById("tekst").innerHTML = "Og dytter....."
+}
+
+function visBilde4() {
+    document.getElementById("bilde").src = document.getElementById("rbtnBilde4").value;
+    document.getElementById("tekst").innerHTML = "Frem og tilbake, dette trener bryste ditt."
+}
+
+function visBilde5() {
+    document.getElementById("bilde2").src = document.getElementById("rbtnBilde5").value;
+    document.getElementById("tekst2").innerHTML = "Ved dette apparatet jobber du med å dra til deg."
+}
+
+function visBilde6() {
+    document.getElementById("bilde2").src = document.getElementById("rbtnBilde6").value;
+    document.getElementById("tekst2").innerHTML = "Du setter deg i settet og tar hendene på håndtakkene."
+}
+
+function visBilde7() {
+    document.getElementById("bilde2").src = document.getElementById("rbtnBilde7").value;
+    document.getElementById("tekst2").innerHTML = "Og drar frem og tilbake, dette trener også bryste ditt."
+}
+
+function visBilde8() {
+    document.getElementById("bilde3").src = document.getElementById("rbtnBilde8").value;
+    document.getElementById("tekst3").innerHTML = "Ved dette apparatet jobber du med å sparke fra deg."
+}
+
+function visBilde9() {
+    document.getElementById("bilde3").src = document.getElementById("rbtnBilde9").value;
+    document.getElementById("tekst3").innerHTML = "Du setter deg i settet og setter føttene på platen."
+}
+
+function visBilde10() {
+    document.getElementById("bilde3").src = document.getElementById("rbtnBilde10").value;
+    document.getElementById("tekst3").innerHTML = "Det er anbefalt å holde hendene på stengene under settet."
+}
+
+function visBilde11() {
+    document.getElementById("bilde3").src = document.getElementById("rbtnBilde11").value;
+    document.getElementById("tekst3").innerHTML = "så sparker du platen fra deg."
+}
+
+function visBilde12() {
+    document.getElementById("bilde3").src = document.getElementById("rbtnBilde12").value;
+    document.getElementById("tekst3").innerHTML = "Det er viktig å ikke strekke beina HELT ut."
+}
+
+function visBilde13() {
+    document.getElementById("bilde4").src = document.getElementById("rbtnBilde13").value;
+    document.getElementById("tekst4").innerHTML = "Dette apparatet er som en trenings sykkel, men du står isteden for å sitte."
+}
+
+function visBilde14() {
+    document.getElementById("bilde4").src = document.getElementById("rbtnBilde14").value;
+    document.getElementById("tekst4").innerHTML = "Så ja... det er bare å sykle."
+}
+
+function visBilde15() {
+    document.getElementById("bilde4").src = document.getElementById("rbtnBilde15").value;
+    document.getElementById("tekst4").innerHTML = "Som en tur på stedet."
+}
+
+function visBilde16() {
+    document.getElementById("bilde4").src = document.getElementById("rbtnBilde16").value;
+    document.getElementById("tekst4").innerHTML = "Fun fact: Den er drevet av strøm den får når du sykler, så når den ikke blir brukt så blir skjermen skrudd av."
+}
+
+</script>
+
+
+
+</body>
+</html>
