@@ -1,0 +1,16 @@
+section {
+    padding: 25px 30px 20px;
+}
+
+body {
+    max-width: 1500px;
+}
+
+a {
+    color: black;
+}
+
+p {
+    font-size: large;
+}
+
